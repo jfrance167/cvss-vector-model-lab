@@ -1,0 +1,29 @@
+test_frozen_reports (test_model.Contract.test_frozen_reports) ... 
+  test_frozen_reports (test_model.Contract.test_frozen_reports) (case='synthetic-pr-low-changed') ... FAIL
+  test_frozen_reports (test_model.Contract.test_frozen_reports) (case='synthetic-pr-high-changed') ... FAIL
+test_roundup_boundary_helpers (test_model.Contract.test_roundup_boundary_helpers) ... ok
+
+======================================================================
+FAIL: test_frozen_reports (test_model.Contract.test_frozen_reports) (case='synthetic-pr-low-changed')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\cvss-vector-model-lab\.private\verification-20261005\erase-scope-pr\tests\test_model.py", line 40, in test_frozen_reports
+    self.assertEqual(model.interpret(case['input']), case['expected'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'sch[440 chars]: '9.6', 'score_basis': 'supplied_base_metrics[99 chars]']}]} != {'sch[440 chars]: '9.9', 'score_basis': 'supplied_base_metrics[99 chars]']}]}
+Diff is 1493 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_reports (test_model.Contract.test_frozen_reports) (case='synthetic-pr-high-changed')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\cvss-vector-model-lab\.private\verification-20261005\erase-scope-pr\tests\test_model.py", line 40, in test_frozen_reports
+    self.assertEqual(model.interpret(case['input']), case['expected'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'sch[438 chars]e': '7.9', 'score_basis': 'supplied_base_metri[101 chars]']}]} != {'sch[438 chars]e': '9.1', 'score_basis': 'supplied_base_metri[101 chars]']}]}
+Diff is 1493 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.006s
+
+FAILED (failures=2)

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "profile": "cvss31-base-v1",
+  "vectors": [
+    "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:X"
+  ]
+}

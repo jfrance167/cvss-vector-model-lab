@@ -1,0 +1,1 @@
+{"schema_version":1,"profile":"cvss31-base-v1","status":"invalid","reasons":[{"code":"metric_value","pointer":"/vectors/1"}],"results":[]}

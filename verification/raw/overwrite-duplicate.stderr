@@ -1,0 +1,70 @@
+test_frozen_reports (test_model.Contract.test_frozen_reports) ... 
+  test_frozen_reports (test_model.Contract.test_frozen_reports) (case='duplicate-N') ... FAIL
+  test_frozen_reports (test_model.Contract.test_frozen_reports) (case='duplicate-P') ... FAIL
+  test_frozen_reports (test_model.Contract.test_frozen_reports) (case='optional-duplicate') ... FAIL
+  test_frozen_reports (test_model.Contract.test_frozen_reports) (case='late-invalid-behind-future') ... FAIL
+test_roundup_boundary_helpers (test_model.Contract.test_roundup_boundary_helpers) ... ok
+
+======================================================================
+FAIL: test_frozen_reports (test_model.Contract.test_frozen_reports) (case='duplicate-N')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\cvss-vector-model-lab\.private\verification-20261005\overwrite-duplicate\tests\test_model.py", line 40, in test_frozen_reports
+    self.assertEqual(model.interpret(case['input']), case['expected'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'sch[54 chars]: 'interpreted', 'reasons': [], 'results': [{'[490 chars]']}]} != {'sch[54 chars]: 'invalid', 'reasons': [{'code': 'duplicate_m[44 chars]: []}
+Diff is 1499 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_reports (test_model.Contract.test_frozen_reports) (case='duplicate-P')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\cvss-vector-model-lab\.private\verification-20261005\overwrite-duplicate\tests\test_model.py", line 40, in test_frozen_reports
+    self.assertEqual(model.interpret(case['input']), case['expected'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'sch[54 chars]: 'interpreted', 'reasons': [], 'results': [{'[490 chars]']}]} != {'sch[54 chars]: 'invalid', 'reasons': [{'code': 'duplicate_m[44 chars]: []}
+Diff is 1499 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_reports (test_model.Contract.test_frozen_reports) (case='optional-duplicate')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\cvss-vector-model-lab\.private\verification-20261005\overwrite-duplicate\tests\test_model.py", line 40, in test_frozen_reports
+    self.assertEqual(model.interpret(case['input']), case['expected'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'sch[52 chars]s': 'unsupported', 'reasons': [{'code': 'optio[49 chars]: []} != {'sch[52 chars]s': 'invalid', 'reasons': [{'code': 'duplicate[46 chars]: []}
+  {'profile': 'cvss31-base-v1',
+-  'reasons': [{'code': 'optional_metric', 'pointer': '/vectors/0'}],
+?                        ^  ^^^^^
+
++  'reasons': [{'code': 'duplicate_metric', 'pointer': '/vectors/0'}],
+?                        ^^ ++++ ^
+
+   'results': [],
+   'schema_version': 1,
+-  'status': 'unsupported'}
++  'status': 'invalid'}
+
+======================================================================
+FAIL: test_frozen_reports (test_model.Contract.test_frozen_reports) (case='late-invalid-behind-future')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\cvss-vector-model-lab\.private\verification-20261005\overwrite-duplicate\tests\test_model.py", line 40, in test_frozen_reports
+    self.assertEqual(model.interpret(case['input']), case['expected'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'sch[84 chars]e': 'metric_value', 'pointer': '/vectors/1'}], 'results': []} != {'sch[84 chars]e': 'duplicate_metric', 'pointer': '/vectors/1[14 chars]: []}
+  {'profile': 'cvss31-base-v1',
+-  'reasons': [{'code': 'metric_value', 'pointer': '/vectors/1'}],
+?                              ------
+
++  'reasons': [{'code': 'duplicate_metric', 'pointer': '/vectors/1'}],
+?                        ++++++++++
+
+   'results': [],
+   'schema_version': 1,
+   'status': 'invalid'}
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.007s
+
+FAILED (failures=4)

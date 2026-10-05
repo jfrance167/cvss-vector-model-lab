@@ -1,0 +1,2264 @@
+[
+  {
+    "name": "empty",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": []
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": []
+    }
+  },
+  {
+    "name": "published-9.8",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": [
+        {
+          "index": 0,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "published-6.1",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": [
+        {
+          "index": 0,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "R",
+            "S": "C",
+            "C": "L",
+            "I": "L",
+            "A": "N"
+          },
+          "computed_base_score": "6.1",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "published-7.5",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": [
+        {
+          "index": 0,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "N",
+            "A": "N"
+          },
+          "computed_base_score": "7.5",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "published-8.6",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": [
+        {
+          "index": 0,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "C",
+            "C": "H",
+            "I": "N",
+            "A": "N"
+          },
+          "computed_base_score": "8.6",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "published-7.2-pr-high",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": [
+        {
+          "index": 0,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "H",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "7.2",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "synthetic-pr-low-unchanged",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": [
+        {
+          "index": 0,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "L",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "8.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "synthetic-pr-low-changed",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": [
+        {
+          "index": 0,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "L",
+            "UI": "N",
+            "S": "C",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.9",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "synthetic-pr-high-changed",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": [
+        {
+          "index": 0,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "H",
+            "UI": "N",
+            "S": "C",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.1",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "synthetic-cap",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": [
+        {
+          "index": 0,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "C",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "10.0",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "synthetic-zero-unchanged",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": [
+        {
+          "index": 0,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "N",
+            "I": "N",
+            "A": "N"
+          },
+          "computed_base_score": "0.0",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "synthetic-zero-changed",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:N"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": [
+        {
+          "index": 0,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:N",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:N",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "C",
+            "C": "N",
+            "I": "N",
+            "A": "N"
+          },
+          "computed_base_score": "0.0",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "reordered",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/A:N/I:L/C:L/S:C/UI:R/PR:N/AC:L/AV:N"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": [
+        {
+          "index": 0,
+          "input_vector": "CVSS:3.1/A:N/I:L/C:L/S:C/UI:R/PR:N/AC:L/AV:N",
+          "input_metric_order": [
+            "A",
+            "I",
+            "C",
+            "S",
+            "UI",
+            "PR",
+            "AC",
+            "AV"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "R",
+            "S": "C",
+            "C": "L",
+            "I": "L",
+            "A": "N"
+          },
+          "computed_base_score": "6.1",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "repeat-retained",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": [
+        {
+          "index": 0,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 1,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 2,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "R",
+            "S": "C",
+            "C": "L",
+            "I": "L",
+            "A": "N"
+          },
+          "computed_base_score": "6.1",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "maximum-count",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "interpreted",
+      "reasons": [],
+      "results": [
+        {
+          "index": 0,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 1,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 2,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 3,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 4,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 5,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 6,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 7,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 8,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 9,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 10,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 11,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 12,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 13,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 14,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        },
+        {
+          "index": 15,
+          "input_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "input_metric_order": [
+            "AV",
+            "AC",
+            "PR",
+            "UI",
+            "S",
+            "C",
+            "I",
+            "A"
+          ],
+          "canonical_base_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metric_values": {
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "H",
+            "I": "H",
+            "A": "H"
+          },
+          "computed_base_score": "9.8",
+          "score_basis": "supplied_base_metrics_only",
+          "unassessed": [
+            "metric_accuracy",
+            "temporal",
+            "environmental",
+            "real_world_severity",
+            "risk"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "missing-AV",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "missing_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "missing-AC",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "missing_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "missing-PR",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/UI:N/S:U/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "missing_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "missing-UI",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/S:U/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "missing_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "missing-S",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "missing_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "missing-C",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "missing_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "missing-I",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "missing_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "missing-A",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "missing_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "duplicate-N",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/AV:N"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "duplicate_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "duplicate-P",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/AV:P"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "duplicate_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "base-X",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:X/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "metric_value",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "invalid-value",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:Q/S:U/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "metric_value",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "unknown-metric",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/ZZ:N"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "unknown_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "syntax-'/'",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "vector_syntax",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "syntax-'/AV'",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/AV"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "vector_syntax",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "syntax-'/AV:N:N'",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/AV:N:N"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "vector_syntax",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "syntax-'//'",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H//"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "vector_syntax",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "prefix-cvss:3.1/",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "cvss:3.1/"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "vector_syntax",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "prefix-CVSS:3.1/",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "vector_syntax",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "prefix-CVSS:123.1/AV:N",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:123.1/AV:N"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "vector_syntax",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "prefix-CVSS:3.1/ AV:N",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/ AV:N"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "vector_syntax",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "optional-/E:X",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:X"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "unsupported",
+      "reasons": [
+        {
+          "code": "optional_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "optional-/E:H",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "unsupported",
+      "reasons": [
+        {
+          "code": "optional_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "optional-/MAV:X",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/MAV:X"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "unsupported",
+      "reasons": [
+        {
+          "code": "optional_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "optional-/CR:H",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/CR:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "unsupported",
+      "reasons": [
+        {
+          "code": "optional_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "optional-invalid",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:Q"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "metric_value",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "optional-duplicate",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:X/E:X"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "duplicate_metric",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "future",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:4.0/not-base-grammar"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "unsupported",
+      "reasons": [
+        {
+          "code": "version",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "late-invalid-behind-future",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:4.0/text",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/UI:Q"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "duplicate_metric",
+          "pointer": "/vectors/1"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "late-invalid-no-partials",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:X/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "metric_value",
+          "pointer": "/vectors/1"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "late-invalid-behind-optional",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:X",
+        "CVSS:3.1/AV:N"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "missing_metric",
+          "pointer": "/vectors/1"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "first-unsupported",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:4.0/text",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:X"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "unsupported",
+      "reasons": [
+        {
+          "code": "version",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "schema-bool",
+    "input": {
+      "schema_version": true,
+      "profile": "cvss31-base-v1",
+      "vectors": []
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "shape",
+          "pointer": "/schema_version"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "schema-future",
+    "input": {
+      "schema_version": 2,
+      "profile": "cvss31-base-v1",
+      "vectors": []
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "unsupported",
+      "reasons": [
+        {
+          "code": "schema_version",
+          "pointer": "/schema_version"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "profile-future",
+    "input": {
+      "schema_version": 1,
+      "profile": "other",
+      "vectors": []
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "unsupported",
+      "reasons": [
+        {
+          "code": "profile",
+          "pointer": "/profile"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "unknown-root",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [],
+      "x/y~": null
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "unsupported",
+      "reasons": [
+        {
+          "code": "unknown_field",
+          "pointer": "/x~1y~0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "unknown-root-invalid-vector",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "bad"
+      ],
+      "extra": []
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "vector_syntax",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "root-list",
+    "input": [],
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "shape",
+          "pointer": ""
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "missing-root",
+    "input": {},
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "shape",
+          "pointer": "/schema_version"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "vectors-string",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": "x"
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "shape",
+          "pointer": "/vectors"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "vector-null",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        null
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "shape",
+          "pointer": "/vectors/0"
+        }
+      ],
+      "results": []
+    }
+  },
+  {
+    "name": "too-many-vectors",
+    "input": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      ]
+    },
+    "expected": {
+      "schema_version": 1,
+      "profile": "cvss31-base-v1",
+      "status": "invalid",
+      "reasons": [
+        {
+          "code": "admission",
+          "pointer": ""
+        }
+      ],
+      "results": []
+    }
+  }
+]

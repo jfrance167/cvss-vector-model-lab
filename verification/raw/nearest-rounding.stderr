@@ -1,0 +1,98 @@
+test_frozen_reports (test_model.Contract.test_frozen_reports) ... 
+  test_frozen_reports (test_model.Contract.test_frozen_reports) (case='published-6.1') ... FAIL
+  test_frozen_reports (test_model.Contract.test_frozen_reports) (case='published-8.6') ... FAIL
+  test_frozen_reports (test_model.Contract.test_frozen_reports) (case='published-7.2-pr-high') ... FAIL
+  test_frozen_reports (test_model.Contract.test_frozen_reports) (case='synthetic-pr-low-unchanged') ... FAIL
+  test_frozen_reports (test_model.Contract.test_frozen_reports) (case='synthetic-pr-high-changed') ... FAIL
+  test_frozen_reports (test_model.Contract.test_frozen_reports) (case='reordered') ... FAIL
+  test_frozen_reports (test_model.Contract.test_frozen_reports) (case='repeat-retained') ... FAIL
+test_roundup_boundary_helpers (test_model.Contract.test_roundup_boundary_helpers) ... FAIL
+
+======================================================================
+FAIL: test_frozen_reports (test_model.Contract.test_frozen_reports) (case='published-6.1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\cvss-vector-model-lab\.private\verification-20261005\nearest-rounding\tests\test_model.py", line 40, in test_frozen_reports
+    self.assertEqual(model.interpret(case['input']), case['expected'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'sch[440 chars]: '6.0', 'score_basis': 'supplied_base_metrics[99 chars]']}]} != {'sch[440 chars]: '6.1', 'score_basis': 'supplied_base_metrics[99 chars]']}]}
+Diff is 1493 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_reports (test_model.Contract.test_frozen_reports) (case='published-8.6')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\cvss-vector-model-lab\.private\verification-20261005\nearest-rounding\tests\test_model.py", line 40, in test_frozen_reports
+    self.assertEqual(model.interpret(case['input']), case['expected'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'sch[440 chars]: '8.5', 'score_basis': 'supplied_base_metrics[99 chars]']}]} != {'sch[440 chars]: '8.6', 'score_basis': 'supplied_base_metrics[99 chars]']}]}
+Diff is 1493 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_reports (test_model.Contract.test_frozen_reports) (case='published-7.2-pr-high')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\cvss-vector-model-lab\.private\verification-20261005\nearest-rounding\tests\test_model.py", line 40, in test_frozen_reports
+    self.assertEqual(model.interpret(case['input']), case['expected'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'sch[440 chars]: '7.1', 'score_basis': 'supplied_base_metrics[99 chars]']}]} != {'sch[440 chars]: '7.2', 'score_basis': 'supplied_base_metrics[99 chars]']}]}
+Diff is 1493 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_reports (test_model.Contract.test_frozen_reports) (case='synthetic-pr-low-unchanged')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\cvss-vector-model-lab\.private\verification-20261005\nearest-rounding\tests\test_model.py", line 40, in test_frozen_reports
+    self.assertEqual(model.interpret(case['input']), case['expected'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'sch[440 chars]: '8.7', 'score_basis': 'supplied_base_metrics[99 chars]']}]} != {'sch[440 chars]: '8.8', 'score_basis': 'supplied_base_metrics[99 chars]']}]}
+Diff is 1493 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_reports (test_model.Contract.test_frozen_reports) (case='synthetic-pr-high-changed')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\cvss-vector-model-lab\.private\verification-20261005\nearest-rounding\tests\test_model.py", line 40, in test_frozen_reports
+    self.assertEqual(model.interpret(case['input']), case['expected'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'sch[440 chars]: '9.0', 'score_basis': 'supplied_base_metrics[99 chars]']}]} != {'sch[440 chars]: '9.1', 'score_basis': 'supplied_base_metrics[99 chars]']}]}
+Diff is 1493 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_reports (test_model.Contract.test_frozen_reports) (case='reordered')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\cvss-vector-model-lab\.private\verification-20261005\nearest-rounding\tests\test_model.py", line 40, in test_frozen_reports
+    self.assertEqual(model.interpret(case['input']), case['expected'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'sch[440 chars]: '6.0', 'score_basis': 'supplied_base_metrics[99 chars]']}]} != {'sch[440 chars]: '6.1', 'score_basis': 'supplied_base_metrics[99 chars]']}]}
+Diff is 1493 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_reports (test_model.Contract.test_frozen_reports) (case='repeat-retained')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\cvss-vector-model-lab\.private\verification-20261005\nearest-rounding\tests\test_model.py", line 40, in test_frozen_reports
+    self.assertEqual(model.interpret(case['input']), case['expected'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'sch[1424 chars]: '6.0', 'score_basis': 'supplied_base_metrics[99 chars]']}]} != {'sch[1424 chars]: '6.1', 'score_basis': 'supplied_base_metrics[99 chars]']}]}
+Diff is 4001 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_roundup_boundary_helpers (test_model.Contract.test_roundup_boundary_helpers)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\cvss-vector-model-lab\.private\verification-20261005\nearest-rounding\tests\test_model.py", line 113, in test_roundup_boundary_helpers
+    self.assertEqual(model._roundup(Fraction(value)), expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '4.0' != '4.1'
+- 4.0
+?   ^
++ 4.1
+?   ^
+
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.011s
+
+FAILED (failures=8)

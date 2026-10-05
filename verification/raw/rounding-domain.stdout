@@ -1,0 +1,7 @@
+{
+  "combinations": 2592,
+  "zero_impact": 96,
+  "mismatches": [],
+  "comparison_sha256": "7536fd539e44662738db79ebddb18a22f85f33009b4320ead76ff4500c41519a",
+  "claim": "finite comparison, not independent published-score corpus"
+}

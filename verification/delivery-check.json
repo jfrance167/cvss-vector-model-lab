@@ -1,0 +1,16 @@
+{
+  "scope": "CVSS public delivery files only; .private/pycache excluded",
+  "secret_patterns": [
+    "private_key",
+    "github_token",
+    "provider_key",
+    "aws_key"
+  ],
+  "matches": [],
+  "not_exhaustive": true,
+  "project_history_commits": 0,
+  "history_command_exit": 0,
+  "bandit_version": "1.9.4",
+  "verification_original_hashes_match": true,
+  "vault_note_sha256": "610f1402961e1942ddaa281cb12472e32ea211ff704d13802ac1a48712da4e36"
+}

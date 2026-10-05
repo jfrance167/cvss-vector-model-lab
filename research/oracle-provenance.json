@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-05",
+  "authoring": "literal independent expected scores before scorer code",
+  "published": [
+    {
+      "score": "9.8",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "source": "https://www.first.org/cvss/v3.1/examples",
+      "section": "Base metric table: N/L/N/N/U/H/H/H"
+    },
+    {
+      "score": "7.5",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "source": "https://www.first.org/cvss/v3.1/examples",
+      "section": "Base metric table: N/L/N/N/U/H/N/N"
+    },
+    {
+      "score": "7.2",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "source": "https://www.first.org/cvss/v3.1/examples",
+      "section": "Base metric table: N/L/H/N/U/H/H/H"
+    },
+    {
+      "score": "6.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "source": "https://www.first.org/cvss/v3.1/use-design",
+      "section": "Published Base vector N/L/N/R/C/L/L/N"
+    },
+    {
+      "score": "8.6",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "source": "https://www.first.org/cvss/v3.1/use-design",
+      "section": "Published Base component of a vector also declaring RL:O/CR:L; fixture intentionally Base-only, not a stripped application input"
+    }
+  ],
+  "synthetic_hand_controls": {
+    "iss-high": "1-(0.44)^3=0.914816",
+    "impact-unchanged-high": "5.87311872",
+    "pr-low-unchanged": "exploitability 2.83525473; sum 8.70837345 -> 8.8",
+    "pr-high-unchanged": "exploitability 1.234707705; sum 7.107826425 -> 7.2",
+    "impact-changed-high": "7.52*(0.914816-0.029)-3.25*(0.914816-0.02)^15 lies in (6.047,6.048); independent 90-digit Decimal scratch: 6.04773049154451870336525622281184410406935198906265072392713875112224609214253486385712333",
+    "pr-low-changed": "exploitability 3.10963422; scaled sum lies in (9.881,9.893) -> 9.9",
+    "pr-high-changed": "PR=.50; exploitability 2.28649575; 1.08*(impact+exploitability) lies in (9.00017541,9.00125541) ->9.1; independent Decimal scratch 9.00096434086808019963447672063679163239490014818766278184130985121202577951393765296569320",
+    "cap": "N/L/N/N/C/H/H/H scaled sum >10 ->10.0",
+    "zero": "ISS=0; unchanged impact=0, changed impact<0; both ->0.0"
+  },
+  "rounding": {
+    "source": "https://www.first.org/cvss/v3.1/specification-document",
+    "section": "7.1, 7.4 and Appendix A",
+    "formal_helpers": [
+      [
+        "4",
+        "4.0"
+      ],
+      [
+        "4.02",
+        "4.1"
+      ],
+      [
+        "4.000001",
+        "4.1"
+      ]
+    ],
+    "appendix_boundary": [
+      "4.000001",
+      "4.0"
+    ]
+  },
+  "mutants": [
+    "overwrite duplicate",
+    "erase scope PR weight",
+    "nearest rounding",
+    "bypass zero impact"
+  ],
+  "attribution": "CVSS is owned by FIRST and used by permission. Only metric tokens/numeric controls retained; no vulnerability prose copied."
+}

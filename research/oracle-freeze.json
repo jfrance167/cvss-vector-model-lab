@@ -1,0 +1,22 @@
+{
+  "stage": "before application code",
+  "cases": 57,
+  "files": [
+    {
+      "path": "tests/oracles.json",
+      "bytes": 53039,
+      "sha256": "f1db483f1065b35201216415720918285fc1f2bc33cd21e2117f5f4ad9925cc1"
+    },
+    {
+      "path": "research/oracle-provenance.json",
+      "bytes": 2891,
+      "sha256": "4ac38535a341670ee7038cc642c34946d72c5fe7d61c92e8f272457057f45a9c"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 4298,
+      "sha256": "4aa8dfa820bde6175d51cd830b43a23f0ecf6cdb748f67c9d595d9c771eb45f3"
+    }
+  ],
+  "oracle_values": "literal independent; no application or candidate scorer imports"
+}

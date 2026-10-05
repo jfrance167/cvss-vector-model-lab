@@ -1,0 +1,206 @@
+{
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "before": {
+    "model.py": "185489b6b3f579a4045541724fe593b6ff3a632c43f1e601a6d593ac56762f4a",
+    "cli.py": "dacdb6a28522003a72c79c8a7c0968c3b9ac1fab73755d9231ab64df8dee436c",
+    "verify.py": "bd808616b3597af8d007fe5b36c771bd707c2b4e5873c9ffdf024269ab67ef82",
+    "CONTRACT.md": "4aa8dfa820bde6175d51cd830b43a23f0ecf6cdb748f67c9d595d9c771eb45f3",
+    "tests/test_model.py": "5b2160876e910b81efcc658fb1020d4b2a292037feac846f685dc913c842c27c",
+    "tests/domain_check.py": "f0650fea4976b51051aa81c16795fe305ba280aa8cdcfb4a9ab71d93be0b1af4",
+    "tests/mutation_probe.py": "b90b27b838bd4f641d2193e9b29124ed119e84d6d585c5eeeb49b07111a6d9db",
+    "tests/oracles.json": "f1db483f1065b35201216415720918285fc1f2bc33cd21e2117f5f4ad9925cc1",
+    "research/oracle-provenance.json": "4ac38535a341670ee7038cc642c34946d72c5fe7d61c92e8f272457057f45a9c",
+    "research/oracle-freeze.json": "7d5b6a7d9f60c83f17aa336f7babd410aa1987edd9b018aa909a37d451550bec"
+  },
+  "runs": {
+    "rounding-domain": {
+      "command": [
+        "C:\\Users\\Jake\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "tests/domain_check.py"
+      ],
+      "cwd": "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\cvss-vector-model-lab",
+      "exit": 0,
+      "stdout_sha256": "68632e3d71747341d94daa984504f371ba80889a889fa5c88d832ede3dffd4db",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal": {
+      "command": [
+        "C:\\Users\\Jake\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\cvss-vector-model-lab",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "dd000cb7e00ad93f13144a726d2f492dd22240c6bbef16fdb8d844ff469c64f9"
+    },
+    "optimized": {
+      "command": [
+        "C:\\Users\\Jake\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\cvss-vector-model-lab",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "c956a565f0ea469f5582730f5956e94d6db84feccde0336fd8880b9f382f930d"
+    },
+    "bandit-application": {
+      "command": [
+        "C:\\Users\\Jake\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-m",
+        "bandit",
+        "-f",
+        "json",
+        "model.py",
+        "cli.py"
+      ],
+      "cwd": "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\cvss-vector-model-lab",
+      "exit": 0,
+      "stdout_sha256": "332760b9225bd531df36cc4a0650b186645a3c1d45b7f7cdf2be355f321b213d",
+      "stderr_sha256": "e12427b29236c5877c1ce4af0591147ee8c5cb45de59de1b7186477628299e24",
+      "issues": 0,
+      "errors": 0,
+      "severity": {
+        "LOW": 0,
+        "MEDIUM": 0,
+        "HIGH": 0
+      }
+    },
+    "bandit-harness": {
+      "command": [
+        "C:\\Users\\Jake\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-m",
+        "bandit",
+        "-f",
+        "json",
+        "-r",
+        "tests",
+        "verify.py",
+        "research/freeze_oracles.py"
+      ],
+      "cwd": "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\cvss-vector-model-lab",
+      "exit": 1,
+      "stdout_sha256": "70e23006b98ac5b843e62b21efcbe369705ec6ecc38ebd789f8a7bf01c22536d",
+      "stderr_sha256": "e12427b29236c5877c1ce4af0591147ee8c5cb45de59de1b7186477628299e24",
+      "issues": 6,
+      "errors": 0,
+      "severity": {
+        "LOW": 6,
+        "MEDIUM": 0,
+        "HIGH": 0
+      }
+    },
+    "restored": {
+      "command": [
+        "C:\\Users\\Jake\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\cvss-vector-model-lab",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e7802b78f8d4da88ba12c577472ab512e47e614f1bae87fa0516ace093e90bd5"
+    }
+  },
+  "mutations": {
+    "overwrite-duplicate": {
+      "command": [
+        "C:\\Users\\Jake\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "tests/mutation_probe.py"
+      ],
+      "cwd": "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\cvss-vector-model-lab\\.private\\verification-20261005\\overwrite-duplicate",
+      "exit": 1,
+      "stdout_sha256": "d933a0ddfe54cc2f2c061d129557a13103399ff8b2850d3d965c282c06e0b696",
+      "stderr_sha256": "74a9f68e5e7a48e12aae7c3ed1b2c1fa87628f62c4a31c6e523a10c2bfc341f9",
+      "tests": 2,
+      "failures": 4,
+      "errors": 0,
+      "assertion_only": true,
+      "mutant_sha256": "3ac2a43a040ddc3b04c6a113b38077b3853bf51000335a1c2c35c4e2c498f2bd",
+      "killed": true
+    },
+    "erase-scope-pr": {
+      "command": [
+        "C:\\Users\\Jake\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "tests/mutation_probe.py"
+      ],
+      "cwd": "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\cvss-vector-model-lab\\.private\\verification-20261005\\erase-scope-pr",
+      "exit": 1,
+      "stdout_sha256": "f46aa0be7541d2dd0940f1add1ce4ad5d208c22d94517761a83aa2df74cb8ec6",
+      "stderr_sha256": "0d16abee31c1f7dc2099e98d6c84510ce68bb659209bd9c8099800edabbc314e",
+      "tests": 2,
+      "failures": 2,
+      "errors": 0,
+      "assertion_only": true,
+      "mutant_sha256": "c9cd6c8da31af6f97d14e382eee4d9c61e2566c902e00c3687112e14f377264f",
+      "killed": true
+    },
+    "nearest-rounding": {
+      "command": [
+        "C:\\Users\\Jake\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "tests/mutation_probe.py"
+      ],
+      "cwd": "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\cvss-vector-model-lab\\.private\\verification-20261005\\nearest-rounding",
+      "exit": 1,
+      "stdout_sha256": "f4a82c7cd5e2f3fa7c041796e03d57f9cc3cfa211cbac5753fa922427cdfef9d",
+      "stderr_sha256": "183047a6d25416771fb8cbf95959293f5cc1adc6084ccf88db153a58b2ff34ed",
+      "tests": 2,
+      "failures": 8,
+      "errors": 0,
+      "assertion_only": true,
+      "mutant_sha256": "9bae2050eede534c4c8e2e16a9271e728eb79cc4a5a3aed3e6f45d53cc2dde52",
+      "killed": true
+    },
+    "bypass-zero-impact": {
+      "command": [
+        "C:\\Users\\Jake\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "tests/mutation_probe.py"
+      ],
+      "cwd": "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\cvss-vector-model-lab\\.private\\verification-20261005\\bypass-zero-impact",
+      "exit": 1,
+      "stdout_sha256": "f46aa0be7541d2dd0940f1add1ce4ad5d208c22d94517761a83aa2df74cb8ec6",
+      "stderr_sha256": "98160ae98c1b87d67ddec279fde5ce0f6a6b0e457912905c2465c73f4459a032",
+      "tests": 2,
+      "failures": 2,
+      "errors": 0,
+      "assertion_only": true,
+      "mutant_sha256": "e495d011275fd7bcae6f6059f5f9f97f3cbcd8f59bae92df597656982a11472a",
+      "killed": true
+    }
+  },
+  "rounding_gate": {
+    "combinations": 2592,
+    "zero_impact": 96,
+    "mismatches": [],
+    "comparison_sha256": "7536fd539e44662738db79ebddb18a22f85f33009b4320ead76ff4500c41519a",
+    "claim": "finite comparison, not independent published-score corpus"
+  },
+  "after": {
+    "model.py": "185489b6b3f579a4045541724fe593b6ff3a632c43f1e601a6d593ac56762f4a",
+    "cli.py": "dacdb6a28522003a72c79c8a7c0968c3b9ac1fab73755d9231ab64df8dee436c",
+    "verify.py": "bd808616b3597af8d007fe5b36c771bd707c2b4e5873c9ffdf024269ab67ef82",
+    "CONTRACT.md": "4aa8dfa820bde6175d51cd830b43a23f0ecf6cdb748f67c9d595d9c771eb45f3",
+    "tests/test_model.py": "5b2160876e910b81efcc658fb1020d4b2a292037feac846f685dc913c842c27c",
+    "tests/domain_check.py": "f0650fea4976b51051aa81c16795fe305ba280aa8cdcfb4a9ab71d93be0b1af4",
+    "tests/mutation_probe.py": "b90b27b838bd4f641d2193e9b29124ed119e84d6d585c5eeeb49b07111a6d9db",
+    "tests/oracles.json": "f1db483f1065b35201216415720918285fc1f2bc33cd21e2117f5f4ad9925cc1",
+    "research/oracle-provenance.json": "4ac38535a341670ee7038cc642c34946d72c5fe7d61c92e8f272457057f45a9c",
+    "research/oracle-freeze.json": "7d5b6a7d9f60c83f17aa336f7babd410aa1987edd9b018aa909a37d451550bec"
+  },
+  "original_sources_unchanged": true,
+  "status": "passed"
+}

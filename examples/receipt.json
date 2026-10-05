@@ -1,0 +1,22 @@
+[
+  {
+    "example": "base-9.8",
+    "exit": 0,
+    "report_sha256": "f2fb2995735b73ebb6dd17604db2f7f1a8e9953eca081306881c8d7a10f06c1a"
+  },
+  {
+    "example": "base-6.1",
+    "exit": 0,
+    "report_sha256": "158a9e85c576c89933952508d0a8c0f18cc5ba242058d41a40de34c204accb8c"
+  },
+  {
+    "example": "optional-x",
+    "exit": 2,
+    "report_sha256": "44ff79e8784a94de674f3792d3af895fa23dfb72bf150ee5ea4335e994fad513"
+  },
+  {
+    "example": "late-invalid",
+    "exit": 2,
+    "report_sha256": "bc09c7d715261e97f59830db645d9f1c4a60bfbd635b56c2a0f3b96cd1fa6fe2"
+  }
+]

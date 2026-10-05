@@ -1,0 +1,35 @@
+test_api_byte_amplification (test_model.Admission.test_api_byte_amplification) ... ok
+test_brackets_inside_strings_do_not_raise_depth (test_model.Admission.test_brackets_inside_strings_do_not_raise_depth) ... ok
+test_cycles_aliases_and_nonstring_keys (test_model.Admission.test_cycles_aliases_and_nonstring_keys) ... ok
+test_depth_and_node_boundaries (test_model.Admission.test_depth_and_node_boundaries) ... ok
+test_hostile_metaclass_and_instance_hooks_never_called (test_model.Admission.test_hostile_metaclass_and_instance_hooks_never_called) ... ok
+test_import_and_forbidden_capability_seams (test_model.Admission.test_import_and_forbidden_capability_seams) ... ok
+test_integer_and_schema_shape (test_model.Admission.test_integer_and_schema_shape) ... ok
+test_maximum_report_and_output_cap_seam (test_model.Admission.test_maximum_report_and_output_cap_seam) ... ok
+test_other_subclasses_and_key_hooks (test_model.Admission.test_other_subclasses_and_key_hooks) ... ok
+test_raw_byte_boundary (test_model.Admission.test_raw_byte_boundary) ... ok
+test_raw_rejections (test_model.Admission.test_raw_rejections) ... ok
+test_string_and_vector_limits (test_model.Admission.test_string_and_vector_limits) ... ok
+test_decimal_context_does_not_change_scores (test_model.Contract.test_decimal_context_does_not_change_scores) ... ok
+test_freeze_hashes (test_model.Contract.test_freeze_hashes) ... ok
+test_frozen_raw_and_serialized_reports (test_model.Contract.test_frozen_raw_and_serialized_reports) ... ok
+test_frozen_reports (test_model.Contract.test_frozen_reports) ... ok
+test_input_preservation_and_detached_reports (test_model.Contract.test_input_preservation_and_detached_reports) ... ok
+test_optional_namespace_and_values (test_model.Contract.test_optional_namespace_and_values) ... ok
+test_reordering_and_repeat_determinism (test_model.Contract.test_reordering_and_repeat_determinism) ... ok
+test_roundup_boundary_helpers (test_model.Contract.test_roundup_boundary_helpers) ... ok
+test_unsupported_priority_and_invalid_dominance (test_model.Contract.test_unsupported_priority_and_invalid_dominance) ... ok
+test_actual_all_frozen_cli_reports_normal_and_optimized (test_model.Delivery.test_actual_all_frozen_cli_reports_normal_and_optimized) ... ok
+test_actual_closed_sinks_barrier_normal_and_optimized (test_model.Delivery.test_actual_closed_sinks_barrier_normal_and_optimized) ... ok
+test_actual_help_misuse_normal_and_optimized (test_model.Delivery.test_actual_help_misuse_normal_and_optimized) ... ok
+test_diagnostic_flush_write_and_both_failure (test_model.Delivery.test_diagnostic_flush_write_and_both_failure) ... ok
+test_diagnostic_short_none_bool_writes (test_model.Delivery.test_diagnostic_short_none_bool_writes) ... ok
+test_help_and_misuse (test_model.Delivery.test_help_and_misuse) ... ok
+test_output_flush_and_write_errors (test_model.Delivery.test_output_flush_and_write_errors) ... ok
+test_read_and_closed_stream_errors (test_model.Delivery.test_read_and_closed_stream_errors) ... ok
+test_short_none_bool_output_writes (test_model.Delivery.test_short_none_bool_output_writes) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 9.351s
+
+OK
