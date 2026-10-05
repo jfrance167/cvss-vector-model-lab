@@ -1,0 +1,4 @@
+# Frozen evidence is verified byte-for-byte on every platform.
+/tests/oracles.json -text
+/research/oracle-provenance.json -text
+/CONTRACT.md -text
